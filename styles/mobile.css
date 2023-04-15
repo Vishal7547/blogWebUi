@@ -1,4 +1,12 @@
 @media screen and (max-width:767px) {
+    .at767hundred {
+        width: 100% !important;
+    }
+
+    .at767margin {
+        margin: 3px !important;
+    }
+
     .at767None {
         display: none;
     }
@@ -194,6 +202,121 @@
     #signIn,
     #Login2 {
         text-decoration: underline;
+    }
+
+    /* posts */
+
+
+    .title p {
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+    .subTitles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subTitles .text {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: #212529;
+    }
+
+    .title2 p {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+
+        color: #5C5C5C;
+    }
+
+    .userPic span {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 17px;
+
+
+        color: #000000;
+    }
+
+    .lastHeading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .share span {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        margin: 0 5px;
+        color: #525252;
+    }
+
+    .viewDetails {
+
+        align-items: center;
+        background: #FFFFFF;
+        border: 0.7px dashed #A9AEB8;
+        border-radius: 8px;
+    }
+
+    .viewDetails p {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 140.4%;
+        /* or 18px */
+        margin: auto;
+        padding: 10px 0;
+        text-align: center;
+
+        color: #E56135;
+    }
+
+    .address {
+        display: flex;
+        justify-content: start;
+
+        align-items: center;
+    }
+
+    .contact {
+        margin: 0 5px;
+    }
+
+    .contact span {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        color: #000000;
+    }
+
+    .viewDetails2 p {
+        color: #02B875;
     }
 }
 
