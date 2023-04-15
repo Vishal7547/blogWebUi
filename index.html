@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user/login</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/login_Signup.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<body id="dark">
+    <!-- section A:Header -->
+    <section class="section-a at767None">
+        <!-- header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="./images/Path 963.png" alt="">
+                            <img src="./images/Path 964.png" alt="">
+                            <img src="./images/Path 965.png" alt="">
+                            <img src="./images/Path 966.png" alt="">
+                            <img src="./images/Union 1.png" alt="">
+                            <img src="./images/Path 967.png" alt="">
+                            <img src="./images/Path 968.png" alt="">
+                            <img src="./images/Path 969.png" alt="">
+                            <img src="./images/Path 970.png" alt="">
+                        </div>
+                    </a>
+                    <div class="search">
+
+                        <input type="text" class="form-control" id="iconsSearch"
+                            placeholder="Search for your favorite groups in ATG" autocomplete="off">
+                    </div>
+                    <div class="btns">
+                        <span><a href="loginUser.html">
+                                Create account. <b id="free">It’s free!</b>
+                            </a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-b">
+        <!-- header image -->
+        <div class="container-fluid bgImageHeader">
+            <div class="row" id="below767px">
+                <div class="join py-2">
+                    <div class="arrow">
+                        <img src="./images/arrow_back_24px.png" alt="arrow">
+                    </div>
+                    <div>
+                        <button class="btn mobileJoin" onclick="signIn()">
+                            <span>
+                                Join Now
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- text -->
+            <div class="row subTitle">
+                <h1>Computer Engineering</h1>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!-- content -->
+        <!-- desktop view -->
+        <section class="section-a my-5 menuOnlyAt767">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar2">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a id="active" href="">All Posts(32)</a>
+                                </li>
+                                <li>
+                                    <a href="">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="">Events</a>
+                                </li>
+                                <li>
+                                    <a href="">Job</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btnsGroup">
+                            <button class="btn btn_one">
+                                Write a Post
+                                <i class="bi bi-caret-down-fill"></i>
+                            </button>
+                            <button class="btn btn_two" onclick="joinGroup()">
+                                <i class="bi bi-person-plus-fill"></i>
+                                Join Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-b my-5" id="marginLess">
+            <div class="container">
+                <div class="row">
+                    <!-- menu for mobileView -->
+                    <div class="row mb-2">
+                        <div id="menuMobile">
+                            <div class="post368">
+                                <span>
+                                    Post(368)
+                                </span>
+                            </div>
+                            <div class="filterPost">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Filter:All</option>
+                                    <option value="1">MBA</option>
+                                    <option value="2">Jobs</option>
+                                    <option value="3">Latest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post -->
+                    <!-- left-side -->
+                    <div class="col-md-8">
+                        <!-- post-1 -->
+                        <div class="row">
+                            <div class="post g-0">
+                                <div class="row imgOne">
+                                    <img src="./images/post1.png" alt="">
+                                </div>
+                                <div class="row content p-4">
+                                    <div class="row title my-2">
+                                        <p>✍️ Article</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="subTitles">
+                                            <span class="text">What if famous brands had regular fonts? Meet
+                                                <br> RegulaBrands!</span>
+                                            <span>
+                                                <i class="bi bi-three-dots"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row title2 my-2">
+                                        <p>
+                                            I’ve worked in UX for the better part of a decade. From now on, I plan to
+                                            rei…
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="lastHeading">
+                                            <div class="userPic">
+                                                <img src="./images/userPic.png" alt="">
+                                                <span>Sarthak Kamra</span>
+                                            </div>
+                                            <div class="share view">
+                                                <span><i class="bi bi-eye"></i></span>
+                                                <span>1.4k views</span>
+                                                <span><i class="bi bi-share"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- post-2 -->
+                        <div class="row">
+                            <div class="post g-0">
+                                <div class="row imgOne">
+                                    <img src="./images/post2.png" alt="">
+                                </div>
+                                <div class="row content p-4">
+                                    <div class="row title my-2">
+                                        <p>🔬️ Education</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="subTitles">
+                                            <span class="text">Tax Benefits for Investment under National Pension <br>
+                                                Scheme launched by Government</span>
+                                            <span>
+                                                <i class="bi bi-three-dots"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row title2 my-2">
+                                        <p>
+                                            I’ve worked in UX for the better part of a decade. From now on, I plan to
+                                            rei…
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="lastHeading">
+                                            <div class="userPic">
+                                                <img src="./images/userPic3.png" alt="">
+                                                <span>Sarah West</span>
+                                            </div>
+                                            <div class="share view">
+                                                <span><i class="bi bi-eye"></i></span>
+                                                <span>1.4k views</span>
+                                                <span><i class="bi bi-share"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- post-3 -->
+                        <div class="row">
+                            <div class="post g-0">
+                                <div class="row imgOne">
+                                    <img src="./images/post3.png" alt="">
+                                </div>
+                                <div class="row content p-4">
+                                    <div class="row title my-2">
+                                        <p>🗓️ Meetup</p>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="subTitles">
+                                            <span class="text">Finance & Investment Elite Social Mixer @Lujiazui</span>
+                                            <span>
+                                                <i class="bi bi-three-dots"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="address">
+                                            <div class="calender contact">
+                                                <span><i class="bi bi-calendar-date"></i></span>
+                                                <span>Fri, 12 Oct, 2018</span>
+                                            </div>
+
+                                            <div class="addredd contact">
+                                                <span><i class="bi bi-geo-alt"></i></span>
+
+                                                <span>Ahmedabad, India</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row title2 my-2">
+                                        <div class="viewDetails">
+                                            <p>Visit Website</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="lastHeading">
+                                            <div class="userPic">
+                                                <img src="./images/userPic2.png" alt="">
+                                                <span>Ronal Jones</span>
+                                            </div>
+                                            <div class="share view">
+                                                <span><i class="bi bi-eye"></i></span>
+                                                <span>1.4k views</span>
+                                                <span><i class="bi bi-share"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- post-4 -->
+                        <div class="row">
+                            <div class="post g-0">
+                                <div class="row content p-4">
+                                    <div class="row title my-2">
+                                        <p>💼️ Job</p>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="subTitles">
+                                            <span class="text">Software Developer</span>
+                                            <span>
+                                                <i class="bi bi-three-dots"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="address">
+                                            <div class="calender contact">
+                                                <span><i class="bi bi-building"></i></span>
+                                                <span>Innovaccer Analytics Private Ltd.</span>
+                                            </div>
+
+                                            <div class="addredd contact">
+                                                <span><i class="bi bi-geo-alt"></i></span>
+
+                                                <span>Noida, India</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row title2 my-2">
+                                        <div class="viewDetails viewDetails2">
+                                            <p>Apply on Timesjobs</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="lastHeading">
+                                            <div class="userPic">
+                                                <img src="./images/userPic2.png" alt="">
+                                                <span>Ronal Jones</span>
+                                            </div>
+                                            <div class="share view">
+                                                <span><i class="bi bi-eye"></i></span>
+                                                <span>1.4k views</span>
+                                                <span><i class="bi bi-share"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right-side -->
+                    <div class="col-md-4 rightHdeAt767">
+                        <div class="row joinNow px-3">
+                            <div class="row">
+                                <div class="div notes">
+                                    <span>
+                                        <i class="bi bi-geo-alt"></i>
+                                        Noida,India
+                                    </span>
+                                    <span>
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row  my-2">
+                                <div class="locationUser">
+                                    <div>
+                                        <span>
+                                            <i class="bi bi-gear-wide"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span id="serve">
+                                            Your location will help us serve better and extend a personalised
+                                            experience.
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- create-account -->
+    <div class="container loginUi" id="closed">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="uiTemplate">
+                    <div class="row hideAccount hideLogin" onclick="CloserAccount()">
+                        <img src="./images/cut.png" alt="">
+                    </div>
+                    <div class="uis row p-3">
+                        <div class="row" id="hideAccountatlogin" onclick="CloserAccount()">
+                            <img src="./images/wrong.png" alt="">
+                        </div>
+                        <div class="row headingLogin p-2 g-0">
+                            <p>
+
+                                Let's learn, share & inspire each other with our passion for computer engineering.
+                                Sign
+                                up now 🤘🏼
+                            </p>
+                        </div>
+                        <div class="row g-0 my-2 p-2">
+                            <div class="createAcoount">
+                                <span class="head1">Create Account</span>
+                                <span class="head2" onclick="signIn()">Already have an account? <b id="main">Sign
+                                        In</b></span>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <!-- input-box -->
+                                <div class="row g-0 p-2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <input type="email" class="form-control styleThis"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Email">
+                                                </th>
+
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <input type="password" class="form-control styleThis"
+                                                        id="exampleInputconfirmPassword1"
+                                                        aria-describedby="confirmpasswordHelp" placeholder="Password">
+                                                </th>
+
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <input type="password" class="form-control styleThis"
+                                                        id="exampleInputPassword1" aria-describedby="passwordHelp"
+                                                        placeholder="Confirm Password">
+
+                                                </th>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- buttons-1 submit -->
+                                <div class="row g-0 p-2">
+
+                                    <div class="at767flex">
+                                        <button class="btn Create">
+                                            Create Account
+                                        </button>
+                                        <button onclick="signIn()" class="btn" id="signIn">Sign In</button>
+                                    </div>
+                                </div>
+                                <!-- buttons-2,3 submit -->
+                                <div class="row g-0 p-2 my-2">
+                                    <button class="btn otherAuth my-2">
+                                        <i class="bi bi-facebook" style="color:blue"></i>
+                                        Sign up with Facebook
+                                    </button>
+                                    <br>
+                                    <button class="btn otherAuth">
+                                        <i class="bi bi-google" style="color:blue"></i>
+                                        Sign up with Google
+                                    </button>
+
+
+                                </div>
+                                <div class="row my-2 text-center" id="loremText">
+                                    <span>
+                                        By signing up, you agree to our Terms & conditions, Privacy policy
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6  loginImg">
+                                <img src="./images/atg_illustration.png" alt="signup">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loginUser -->
+    <div class="container loginUi" id="closedLogIn">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="uiTemplate">
+                    <div class="row hideAccount hideLogin" onclick="loginAccount()">
+                        <img src="./images/cut.png" alt="">
+                    </div>
+                    <div class="uis row">
+                        <div class="row pt-1" id="hideAccountatlogin2" onclick="loginAccount()">
+                            <img src="./images/wrong.png" alt="">
+                        </div>
+                        <div class="row headingLogin p-2 g-0">
+                            <p>
+
+                                Let's learn, share & inspire each other with our passion for computer engineering.
+                                Sign
+                                up now 🤘🏼
+                            </p>
+                        </div>
+                        <div class="row g-0 my-2 p-2">
+                            <div class="createAcoount">
+                                <span class="head1">Sign In</span>
+                                <span class="head2" onclick="Login()">
+                                    Don’t have an account yet?<b id="main">Create new for free!</b>
+
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <!-- input-box -->
+                                <div class="row g-0 p-2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <input type="email" class="form-control styleThis"
+                                                        id="loginInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Email">
+                                                </th>
+
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <input type="password" class="form-control styleThis"
+                                                        id="loginInputconfirmPassword1"
+                                                        aria-describedby="confirmpasswordHelp" placeholder="Password">
+                                                </th>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- buttons-1 submit -->
+                                <div class="row g-0 p-2">
+                                    <div class="at767flex">
+                                        <button class="btn Create">
+                                            Sign In
+                                        </button>
+                                        <button onclick="Login()" class="btn" id="Login2">Create Account</button>
+                                    </div>
+                                </div>
+                                <!-- buttons-2,3 submit -->
+                                <div class="row g-0 p-2 my-2">
+                                    <button class="btn otherAuth my-2">
+                                        <i class="bi bi-facebook" style="color:blue"></i>
+                                        Sign up with Facebook
+                                    </button>
+                                    <br>
+                                    <button class="btn otherAuth">
+                                        <i class="bi bi-google" style="color:blue"></i>
+                                        Sign up with Google
+                                    </button>
+                                    <br>
+                                    <span id="forgot">
+                                        Forgot Password?
+                                    </span>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6  loginImg">
+                                <img src="./images/atg_illustration.png" alt="signup">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- write a post btn for mobileViews -->
+    <div class="pencil" id="pencil">
+        <div class="post">
+            <img class="m-auto" src="./images/edit_24px.png" alt="">
+        </div>
+    </div>
+</body>
+<!-- bootstrap js link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<!-- js link for this page -->
+<script src="./js/index.js"></script>
+</head>
+
+</html>
